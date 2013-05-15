@@ -1,0 +1,17 @@
+<h2>About Me</h2>
+<p>
+{{ site.author.about }}
+</p>					
+<p>
+    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>&nbsp;<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author.github }}&repo={{ site.author.github }}.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+</p>
+<p>
+    <a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @{{ site.author.twitter }}</a>
+</p>
+<p>
+    <ul class="buttons unstyled">
+        <li><a href="https://github.com/{{ site.author.github }}" rel="me" class="social github" title="Go to github.com/{{ site.author.github }}" target="_blank"></a></li>
+        <li><a href="http://www.twitter.com/{{ site.author.twitter }}" rel="me" class="social twitter" title="Go to twitter.com/{{ site.author.twitter }}" target="_blank"></a></li>
+        <li><a href="https://github.com/{{ site.author.github }}/Feedback/issues/new" rel="me" class="social mail" title="Leave feedback for {{ site.author.name  }}"  target="_blank"></a></li>				
+    </ul>
+</p>
