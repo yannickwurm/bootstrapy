@@ -10,9 +10,9 @@ permalink: /:year/:month/:day/:title/
 
 author:
     name: Yannick Wurm
-    email: 
+    email: y.wurm@qmul.ac.uk
     github: 
-    twitter: 
+    twitter: yannick__
     gravatar: 
 
 comments:
