@@ -15,7 +15,7 @@ Had a great two weeks visiting [John Wang's lab at Academia Sinica, Taiwan](http
 
 
 
-![Taiwan International Symposium on Social Insects](http://yannick.poulet.org/wpblog/wp-content/uploads/2011/06/TaiwanSocialInsectSymposium.png)
+![Taiwan International Symposium on Social Insects]({{ site.url }}/images{{page.url}}TaiwanSocialInsectSymposium.png)
 
 
 

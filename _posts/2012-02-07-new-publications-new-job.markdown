@@ -13,7 +13,7 @@ categories:
 
 New year, new country, new job:  I am now a [Lecturer](http://en.wikipedia.org/wiki/Lecturer#United_Kingdom) at [Queen Mary University of London](http://www.qmul.ac.uk/). I will continue to use genomics and bioinformatics approaches to examine the interplay between social evolution and genome evolution. Get in touch if you're interested in working with me in a great place.
 
-[![Queen mary qmul logo blue](http://yannick.poulet.org/wpblog/wp-content/uploads/2012/02/queen_mary_qmul_logo_blue.gif)](http://www.sbcs.qmul.ac.uk/staff/yannickwurm.html)
+[![Queen mary qmul logo blue]({{ site.url }}/images{{page.url}}queen_mary_qmul_logo_blue.gif)](http://www.sbcs.qmul.ac.uk/staff/yannickwurm.html)
 
 And a few nice papers on which I am coauthor are now out.
 
@@ -29,4 +29,4 @@ And a few nice papers on which I am coauthor are now out.
   * [Trends in Genetics: The genomic impact of 100 million years of social evolution in seven ant species](http://yannick.poulet.org/publications/TiG2011.pdf). Reviews some of the findings from the [ant genome projects](http://www.antgenomes.org) & lays the foundation for coming analyses. [Romain Libbrecht](http://www.unil.ch/dee/page50472_en.html) & I made the photo that was selected as cover image!
 
 
-[![TIGs ant genomes](http://yannick.poulet.org/wpblog/wp-content/uploads/2012/02/TIGs_ant_genomes.png)](http://www.antgenomes.org)
+[![TIGs ant genomes]({{ site.url }}/images{{page.url}}TIGs_ant_genomes.png)](http://www.antgenomes.org)

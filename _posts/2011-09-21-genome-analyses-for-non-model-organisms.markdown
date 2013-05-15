@@ -23,7 +23,7 @@ Using modern molecular tools on emerging (non-model) organism makes it possible 
 
 
 
-![ContigsJoinedToScaffold](http://yannick.poulet.org/wpblog/wp-content/uploads/2011/09/contigsJoinedToScaffold.png)
+![ContigsJoinedToScaffold]({{ site.url }}/images{{page.url}}contigsJoinedToScaffold.png)
 
 
 

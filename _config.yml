@@ -6,7 +6,7 @@ title: Yannick Wurm
 
 url: http://arkokoley.github.io/bootstrapy
 
-permalink: /:year/:month/:day/:title/
+permalink: /news/:year-:month-:day-:title/
 
 author:
     name: Yannick Wurm

@@ -1,4 +1,4 @@
----
+f---
 author: yannick
 comments: true
 date: 2011-02-21 12:09:17
@@ -17,7 +17,7 @@ Two papers just out! Our [Solenopsis invicta fire ant genome ](http://www.pnas.o
 
 
 
-![Fire ants on genome 096 cropped large shortened](http://yannick.poulet.org/wpblog/wp-content/uploads/2011/02/Fire-ants-on-genome-096-cropped.large-shortened.jpg)
+![Fire ants on genome 096 cropped large shortened]({{ site.url }}/images{{page.url}}Fire-ants-on-genome-096-cropped.large-shortened.jpg)
 
 
 
