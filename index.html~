@@ -1,40 +1,9 @@
 ---
-layout: default
+layout: layout
 title: Yannick Wurm
 ---
-<!DOCTYPE html>
-<html class="fuelux" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.subtitle }}">
-    <meta name="author" content="{{ site.author.name }}">
-    <script src="{{ site.url }}/js/all.js" type="text/javascript"></script>
-	<link href="{{ site.url }}/css/all.css" rel="stylesheet">	
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
-  </head>
-  <body data-spy="scroll" data-target=".subnav" data-offset="50">
-    {% include navigation.html %}
-    
-<div class="jumbotron masthead" style="background: url(/images/fireAntMicroarrays.jpg) no-repeat fixed center top transparent;">
- <div class="container">
-  <h1>{{site.author.name}}</h1>
-<hr/><br/><br/>
-   <h2>{{site.subtitle}}fkk</h2>
- </div>
-</div>
-<div class="container">
-        <div class="content">
-            <div class="row fluid">
-                <div class="span8 columns" >
+<div class="span8 columns" >
 
 <h3>Research Themes</h3>
   <p><strong>Evolutionary genomics of social insects. </strong>
@@ -80,7 +49,7 @@ title: Yannick Wurm
 		infrastructure that aims to <em>crowd-source</em> gene model curation
 		tasks to members of the general public</a>.</li>
 	</ul>
-
+	<br/>
   <h3>Publications</h3>
 
 <p>19. Privman E, <span class="label label-info">Wurm Y</span>*, Keller L*. <em>in press</em> <strong>Duplication and concerted evolution in a master sex determiner under balancing selection</strong>
@@ -261,16 +230,17 @@ Animal Cell Technology Meets Genomics. <em>ESACT Proceedings</em>. Springer Neth
 	  rental in Hackney/Victoria Park London</a></li>
 		<li><a href="http://www.danielefraboulet.com">Cours de peinture/aquarelle &agrave; Lausanne</a></li>
   </ul>
-  </div>
+  </div></div>
   <div class="span3">
 <br/>
   <h3>Contact</h3>
 
-  <strong>y.wurm [at] qmul.ac<span>.</span>uk</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+44 20 7882 3049 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-  href="skype:yannickwurm?add">Skype: yannickwurm </a> <br/>
+  <strong>email: y.wurm [at] qmul.ac.uk</strong>
+  <br/><strong>Phone:</strong> +44 20 7882 3049 
+  <br/><strong>Skype:</strong><a href="skype:yannickwurm?add"> yannickwurm </a> <br/><br/>
   Fogg 5.03A, Division of Organismal Biology, School of Biological
 	  and Chemical Sciences, Mile End Road, E1 4NS London, UK. 
-<br/><br/>
+  <br/><br/>
   <strong>Joining the lab</strong>. Projects may involve genomic
   analyses, bioinformatics, population genetics, molecular biology and/or behavioral work.
 	  <br/>If you are interested in an internship (min. 5 months), a PhD or
@@ -327,12 +297,5 @@ new TWTR.Widget({
   </a>
   
 </div>
-
 </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% include footer.html %}
-  </body>
-</html>
+</div>
