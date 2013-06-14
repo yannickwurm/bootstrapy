@@ -83,7 +83,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #444444;
-    background-color: #FFFFFF;
+    background-color:;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,12 +133,13 @@ input, button, select, textarea {
 }
 
 li#search {
-    position: relative;
+    position: relative;    
 }
 
 li#search h6 {
     font-size: 12px;
     line-height: 18px;
+    background: #FFFFFF;
 }
 
 li#search p {
@@ -154,6 +155,7 @@ li#search input {
 
 li#search hr {
     margin-top: 5px;
+
 }
 
 ol#search-results li {

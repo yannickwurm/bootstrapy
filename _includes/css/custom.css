@@ -133,18 +133,20 @@ input, button, select, textarea {
 }
 
 li#search {
-    position: relative;
+    position: relative;    
 }
 
 li#search h6 {
     font-size: 12px;
     line-height: 18px;
+    color: rgb(255, 255, 255);
 }
 
 li#search p {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+    color: rgb(255, 255, 255);
 }
 
 li#search input {
@@ -154,11 +156,14 @@ li#search input {
 
 li#search hr {
     margin-top: 5px;
+    color: rgb(255, 255, 255);
+
 }
 
 ol#search-results li {
     padding-left: 10px;
     padding-right: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .navbar .nav > #search-results::before {
