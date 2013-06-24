@@ -1,78 +1,22 @@
 ---
-layout: layout
-title: team
----
-<div class="span4">
-				<div class="caption">
-						<h3>Name</h3>
-						<img src="/img/Photograph.jpg" width="100" height="100" style="margin-left:10px" class="img-circle pull-right">
-						<p>Something about the person.</p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-</div>
-<div class="span4">
-			<div class="caption">
-						<h3>Name</h3>
-						<img src="/img/Photograph.jpg" width="100" height="100" style="margin-left:10px" class="img-circle pull-right">
-						<p>Something about the person.</p>
-					
-	</div>
-</div><div class="span4">
-				<div class="caption">
-						<h3>Name</h3>
-						<img src="/img/Photograph.jpg" width="100" height="100" style="margin-left:10px" class="img-circle pull-right">
-						<p>Something about the person.</p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-</div>
-<div class="span12"><br>
-<br>
-<hr/></div>
+layout: page
+title: The Team
 
-<div class="span6"><!--div class="thumbnail"-->			<div class="caption">
-						<h3>Name</h3>
-						<img src="/img/Photograph.jpg" width="100" height="100" style="margin-right:10px" class="img-rounded pull-left">
-						<p>Something about the person's work, etc. </p>
+members:
+- name: Gaurav Koley
+  img: Photograph.jpg
+  about: hu ihi iin inui nu hui hui nui nui iu ni 
+- name: Koley
+  img: Potograph.jpg
+  about: hu ihnui nu hui hui nui nui iu ni 
+---
+{% for member in page.members %}
+<div class="span6">		<div class="caption">
+						<h3>{{ member.name }}</h3>
+						<img src="/img/{{ member.img }}" width="100" height="100" style="margin-right:10px" class="img-rounded pull-left">
+						<p>{{ member.about }} </p>
 					</div>
-<!--/div-->
-</div><div class="span6"><!--div class="thumbnail"-->			<div class="caption">
-						<h3>Name</h3>
-						<img src="/img/Photograph.jpg" width="100" height="100" style="margin-right:10px" class="img-rounded pull-left">
-						<p>Something about the person's work, etc. </p>
-					</div>
-<!--/div-->
+
 </div>
-<div class="span12"><br>
-<br>
-<hr/>
-    <table class="table">
-   	<thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Working since</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>John</td>
-                  <td>CEO</td>
-                  <td>2012</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>CFO</td>
-                  <td>2013</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>Janitor</td>
-                  <td>2010</td>
-                </tr>
-              </tbody>
-    </table>
-</div>
+{% endfor %}
+

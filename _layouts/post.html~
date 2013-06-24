@@ -69,3 +69,6 @@ layout: layout
     </script>
 </div>
     
+                <div class="span4 columns hidden-phone hidden-tablet">
+                     {% include tag_sidebar.html %}
+                </div>

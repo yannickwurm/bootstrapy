@@ -1,4 +1,4 @@
 {
   "title"    : "{{ page.title }}",
-  "url"      : "{{ site.url }}/{{ page.slug }}/",
+  "url"      : "{{ site.url }}/{{ page.url}}/",
 }
