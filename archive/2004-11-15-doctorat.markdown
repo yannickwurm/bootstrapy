@@ -1,0 +1,60 @@
+---
+author: yannick
+comments: true
+date: 2004-11-15 23:40:52
+layout: post
+slug: doctorat
+title: Doctorat
+wordpress_id: 44
+---
+
+Depuis fin 2003, la question de l'après-INSA me trotte pas mal dans la tête. J'ai pu perdre un temps fou à chercher des entreprises, des laboratoires en envisageant d'y travailler ou d'y effectuer une thèse.
+J'ai fini par prendre une décision, en prenant en compte les facteurs suivants:
+
+
+
+	
+  * je travaillerais en entreprise plus tard dans ma vie
+
+	
+  * une thèse est un vrai travail. On se retrouve à gérer des projets, du temps, des hommes; on touche un salaire
+
+	
+  * j'aime être mon propre chef
+
+	
+  * je veux organiser mon temps de manière à faire de la musique et du sport. Un cadre universitaire y est propice.
+
+
+Suite à plusieurs entretiens, j'ai choisi d'effectuer un doctorat au sein du laboratoire du Professeur Laurent Keller, au département d'écologie et d'évolution à Lausanne en Suisse. Ce laboratoire est assez grand; il jouit d'une bonne renommée, et l'équipe m'a l'air très sympas.
+
+En cherchant une thèse je désirais faire de la recherche utile. Au laboratoire Keller, je vais étudier des fourmis. Les comprendre ne permettra pas d'éliminer le cancer, la famine, le sida ni l'oppression des femmes. Mais j'y verrais peut-être la réalisation de sociétés communistes parfaites...
+
+Pourquoi avoir choisi d'étudier ces insectes sociaux?
+
+	
+  * relativement aux traditionnels modèles de choix des biologistes, le champ d'exploration de ces animaux est encore très ouvert
+
+	
+  * l'étude d'insectes sociaux ouvre des champs d'étude inexistants lors de l'étude d'animaux seuls
+
+	
+  * j'utiliserais des méthodes et des outils qui serviront aussi dans d'autres contextes
+
+	
+  * le fonctionnement de différents organismes et systèmes biologiques est proche. Les connaissances acquises serviront donc aussi dans d'autres contextes (j'espère!)
+
+
+La petite annonce à laquelle j'avais répondu était intitulée "PhD in Ant Genomics". Mon travail devra être basé sur une approche "puce é ADN" (cDNA microarray). J'utiliserais ces puces pour comparer l'activité de gènes dans différentes conditions. J'identifierais les gènes dont l'activité sera différente dans les différentes conditions - je pourrais mettre le doigt sur les différences moléculaires entre les conditions.
+La problématique est libre. Je n'ai pas encore choisi quel questionnement je privilégierais. Tout est possible:
+
+	
+  * _Vieillissement_: Alors que l'information génétique d'une reine, d'une ouvrière et d'un mâle sont "identiques", comment expliquer que leurs durées de vies se comptent respectivement en décennies, en années et en jours?
+
+	
+  * _Détermination de castes_: Un oeuf est pondu. En fonction de la température, de la nourriture apportée à la larve, du traitement par les ouvrières, son devenir sera différent. Comment ça marche?
+
+	
+  * _plein d'autres choses mais j'ai la flemme et il faut que je fasse mon sac._
+
+
