@@ -23,7 +23,7 @@ Using modern molecular tools on emerging (non-model) organism makes it possible 
 
 
 
-![ContigsJoinedToScaffold]({{ site.url }}/images{{page.url}}contigsJoinedToScaffold.png)
+![ContigsJoinedToScaffold]({{ site.url }}/img/news/contigsJoinedToScaffold.png)
 
 
 

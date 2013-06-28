@@ -3,13 +3,14 @@ layout: page
 title: "Yannick Wurm' News"
 ---
 <p></p>
-{% for post in site.posts offset: 0 limit: 50 %}
+
 <div class="row">
-  <div class="span7">    
-    <div class="row">
-        <h4><strong><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></strong></h4>      
+  <div class="span7 offset2">    
+{% for post in site.posts offset: 0 limit: 10 %}    
+	<br>
+        <h3><strong><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></strong></h3>      
         <p>
-          {{ post.summary }}
+          {{ post.content }}
         </p>
 		<p>
           <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
@@ -17,10 +18,9 @@ title: "Yannick Wurm' News"
 		  <br />
           <i class="icon-tags"></i> Tags :{% for tag in post.tags %} <a href="{{ site.url }}/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}		            
         </p>
-        <p><a href="{{ site.url }}{{ post.url }}">Read more</a></p>
-    </div>    
 	<hr>
-  </div>
-</div>
+
 {% endfor %}	
-			
+	<h5 class="pull-right"><a href="archive.html">All Posts >> </a></h5>
+ </div>
+</div>

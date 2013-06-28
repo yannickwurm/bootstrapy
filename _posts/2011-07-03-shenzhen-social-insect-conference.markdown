@@ -15,4 +15,4 @@ Many interesting talks and stimulating discussions during [Shenzhen's Social Ins
 
 
 
-[![Social insect genome conf photo]({{ site.url }}/images{{page.url}}social-insect-genome-conf-photo1.jpg)]({{ site.url }}/images{{page.url}}social-insect-genome-conf-photo1.jpg)
+[![Social insect genome conf photo]({{ site.url }}/img/news/social-insect-genome-conf-photo1.jpg)]({{ site.url }}/img/news/social-insect-genome-conf-photo1.jpg)

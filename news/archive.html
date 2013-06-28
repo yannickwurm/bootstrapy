@@ -1,0 +1,16 @@
+---
+layout: page
+title: "Yannick Wurm' News Archive"
+---
+<div class="span7 offset2 column">
+<br>    
+{% for post in site.posts offset: 0 limit: 50 %}
+<div class="row">
+        <span class="pull-left"><strong><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></strong></span>
+	<span class="pull-right">{{ post.date | date: "%B %e, %Y" }}</span>
+</div>
+<hr>   
+{% endfor %} 
+ 
+
+</div>

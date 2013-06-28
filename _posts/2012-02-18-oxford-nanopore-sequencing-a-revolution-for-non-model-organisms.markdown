@@ -25,7 +25,7 @@ Exciting announcement of a new dirt-cheap machine-less DNA sequencing technology
 
 
 
-![MinionUSBThumbchipSequencer]({{ site.url }}/images{{page.url}}minionUSBThumbchipSequencer.jpeg)
+![MinionUSBThumbchipSequencer]({{ site.url }}/img/news/minionUSBThumbchipSequencer.jpeg)
 
 
 
