@@ -1,5 +1,5 @@
 auto: true
-markdown: rdiscount
+markdown: maruku
 pygments: true
 
 title: Ants, Genomes & Evolution Lab @ Queen Mary University London

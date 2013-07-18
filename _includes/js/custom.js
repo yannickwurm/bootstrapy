@@ -30,51 +30,7 @@ jQuery(document).ready(function() {
 			'displayLanguage': false
     });
     
-    function search() {
-        $('#close', search).hide();
-        var data = false;
-        var matches = false;
-        var search = $('#search');
-        var find = function(phrase) {
-            if(!data) {
-                return $.ajax({
-                    url: '/search.json',
-                    dataType: 'json',
-                    success: function(resp) {
-                        data = _(resp).chain()
-                            .compact()
-                            .map(function(p) {
-                                p.words = (p.title.toLowerCase() +' '+ p.summary.toLowerCase()).match(/(\w+)/g);
-                                return p;
-                            })
-                            .value();
-                        find(phrase);
-                    }
-                });
-            }
-            
-            matches = _(data).filter(function(p) {
-                return _(phrase).filter(function(a) {
-                    return _(p.words).any(function(b) {
-                        return a === b || b.indexOf(a) === 0;
-                    });
-                }).length === phrase.length;
-            });
-            
-            $(matches).each(function(){
-                $('#search-results', search).append('<li><h6>'+this.title+'</h6><p>'+this.title+'... <small><a href="'+this.url+'">Read more</a></small></p><hr></li>');
-            });
-            
-            $('#search-results', search).show();
-            $('#close', search).show();
-        };
-        $('input', search).bind("focus",_(function() {
-            $('#search-results', search).empty();
-            $('#search-results', search).hide();
-            $('#close', search).hide();
-            
-            var phrase = $('input', search).val();
-            if (phrase.length >= 4) {
+    
                 find(phrase.toLowerCase().match(/(\w+)/g));
             }
             return false;
@@ -98,5 +54,4 @@ jQuery(document).ready(function() {
             return false;
         }).debounce(100));
     };
-    search();
 });
