@@ -1,5 +1,4 @@
-auto: true
-markdown: maruku
+markdown: rdiscount
 pygments: true
 
 title: Ants, Genomes & Evolution Lab @ Queen Mary University London
@@ -13,7 +12,7 @@ paginate_file: news/index.html
 author:
     name: Yannick Wurm
     email: y.wurm@qmul.ac.uk
-    github: 
+    github: yannickwurm
     twitter: yannick__
     gravatar: 
 
