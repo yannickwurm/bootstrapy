@@ -7,7 +7,5 @@ group :development do
   gem 'rake',       '>=0.9.2'
   gem 'rack',       '>=1.4.1'
   gem 'rdiscount',  '>=1.6.8'
-  gem 'haml',       '>=3.1.6'
+  gem 'nokogiri',   '>=1.6.0'
 end
-
-gem 'sinatra',      '>=1.3.2'
