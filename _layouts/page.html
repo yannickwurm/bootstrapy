@@ -9,8 +9,9 @@
     <meta name="author" content="{{ site.author.name }}">
     <script src="{{ site.url }}/js/all.js" type="text/javascript"></script>
 	<link href="{{ site.url }}/css/bootstrap.css" rel="stylesheet">	
-	<link href="{{ site.url }}/css/custom.css" rel="stylesheet">	
+
 	<link href="{{ site.url }}/css/bootstrap-responsive.css" rel="stylesheet">	
+	<link href="{{ site.url }}/css/custom.css" rel="stylesheet">	
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,19 +44,19 @@ Please make sure there is only one version of jquery installed.
 </style>
   </head>
   
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
     {% include navigation.html %}
-    <div class="jumbotron"><div class="container">
-    <h1>Ants, Genomes & Evolution Lab @ Queen Mary University London</h1>
-    <hr/>
-    </div></div>
-    <div class="container">
-        <div class="row">
-                    {{ content }}
-
-         </div>
+    <div class="jumbotron">
+      <div class="container">
+	<h1>Ants, Genomes & Evolution Lab @ Queen Mary University London</h1>
+      </div>
     </div>
-	<hr />
+    <div class="container">
+      <div class="row">
+        {{ content }}
+      </div>
+    </div>
+    <hr />
     {% include footer.html %}
   </body>
 </html>
