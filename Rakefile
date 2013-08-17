@@ -25,50 +25,46 @@ task :newpost, :title do |t, args|
   end
 end
 
-### Previewing ###
+
+
+## Scraping publications
 desc "Scrape Google Scholar"
 task :scrape do
   Rake::Task
-    puts "\n ## Scraping Google Scholar for publications"
+    puts "## Scraping Google Scholar for publications"
     system "ruby _rubyscholar/scrape.rb > _includes/publications.html"
-    puts "\n ##Scraping Done."
+    puts "##Scraping Done."
 end
 
 
 ## Building ###
-desc "Build the site"
-task :build do
-    Rake::Task[:scrape].invoke
-    puts "\n ## Committing Now."
-    Rake::Task[:translit].invoke
-    system "git add ."
-    system "git add -u"
-    puts "\n## Commiting: Site updated at #{Time.now.utc}"
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit -m \"#{message}\""
-    puts "\n ##Building now."
+desc "Build the site to _site"
+task :build => [ :setlocale, :scrape] do
+    puts "##Building now."
     system "jekyll build"
 end
 
+
 ### Previewing ###
-desc "Preview the site"
-task :preview do
+desc "Scrape, build and preview the site"
+task :preview => [ :setlocale, :build] do
     system "jekyll serve --watch"
 end
 
 task :default => :start
 
+desc "Remove accents and funky chars if needed." 
 task :translit do
-    puts "\n ## Transliterating from utf-8 to ascii"
+    puts "## Transliterating from utf-8 to ascii"
     system "find . -type f -name '*.markdown' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
     system "find . -type f -name '*.html' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
     system "find . -type f -name '*.md' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
-    puts "\n ## Transliterating Done."
+    puts "## Transliterating Done."
 end
 
 task :setlocale do
-    puts "\n setting locale to en_US.UTF-8"
+    puts "## Setting locale to en_US.UTF-8"
     system "LANG=\"en_US.UTF-8\""
     system "LC_ALL=\"en_US.UTF-8\""
-    puts "\n locale set to en_US.UTF-8."
+    puts "## Locale set to en_US.UTF-8."
 end
