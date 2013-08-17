@@ -93,3 +93,9 @@ end
 
 task :default => :start
 
+task :translit do
+  Rake::Task
+    puts "\n ## transliterating"
+    system "find . -type f -name '*.markdown' -print -exec iconv -f utf-8 -t ascii//translit {}  \;"
+    puts "\n ## Transliterating Done."
+end
