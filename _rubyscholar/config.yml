@@ -13,7 +13,7 @@ email: your@email.com
 
 
 # Show "[Cited Nx]" if N > the following number
-minCitations: 5
+minCitations: 10
 
 # Words to italicize (emphasize). These will have "<em>" around them. 
 italicize: 
