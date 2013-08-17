@@ -44,6 +44,12 @@ task :build => [ :setlocale, :scrape] do
     system "jekyll build"
 end
 
+desc "ReBuild the site to _site without rescraping"
+task :rebuild => [ :setlocale] do
+    puts "##Building now."
+    system "jekyll build"
+end
+
 
 ### Previewing ###
 desc "Scrape, build and preview the site"
