@@ -43,10 +43,10 @@ Contacting NCBI confirmed this... Wayne Matten pointed me towards a METHODS [pap
 So the next step was downloading and compiling [NCBI Blast](http://www.ncbi.nlm.nih.gov/BLAST/) sources, and getting [Apple-Genentech's G5-optimized Blastall](http://www.apple.com/acg/). Then for each nucleotide sequence database I wanted to blast against, I had to:
 
 	
-  * call formatdb (supplied with ncbi's Blast: `~/bin/blast-2.2.10/bin/formatdb -i Group10_20050120.fa -l Group10.formatdb.log -t "Apis Contig Group10"`
+  * call formatdb (supplied with ncbi's Blast: `~/bin/blast-2.2.10/bin/formatdb -i Group10_20050120.fa -l Group10.formatdb.log -t "Apis Contig Group10"`
 
 	
-  * blast my sequences against this database: `~/bin/blastall-2.2.9-apple-genentech -p blastp -d genomes/Amel20050120-freeze/contigs/Group10_20050120.fa -i ~/treatedSequence.fasta -o /Users/admin/Documents/Perl/generated\ data/heleneTest.2005-feb-25-mini -M BLOSUM80 -F F`
+  * blast my sequences against this database: `~/bin/blastall-2.2.9-apple-genentech -p blastp -d genomes/Amel20050120-freeze/contigs/Group10_20050120.fa -i ~/treatedSequence.fasta -o /Users/admin/Documents/Perl/generated\ data/heleneTest.2005-feb-25-mini -M BLOSUM80 -F F`
 
 
 _ Note: `-F F` eliminates filtering of reduced complexity regions (repeats). `-M BLOSUM80` specifies my custom matrix located in the directory specified in my `~/.ncbirc`[NCBI]

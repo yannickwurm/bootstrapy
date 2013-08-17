@@ -12,7 +12,7 @@ tags:
 - work
 ---
 
-Two papers just out! Our [Solenopsis invicta fire ant genome ](http://www.pnas.org/cgi/doi/10.1073/pnas.1009690108) paper is out in PNAS. Win! And a study  [on fire ant Odorant Binding Proteins](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0016289) in PLoS ONE. [Anurag Priyam](http://yeban.in) and are developing a [generic BLAST web interface](http://www.sequenceserver.com) in ruby. It's already super useful for our [fourmidable ant genome database](http://www.antgenomes.org), and I'm sure will be for others working with non-model organisms. (easy to use; less of a hassle to set up than gmod...). Using the server, you can [blast ant genome sequences](http://www.antgenomes.org/blast) (and predicted genes).
+Two papers just out! Our [Solenopsis invicta fire ant genome ](http://www.pnas.org/cgi/doi/10.1073/pnas.1009690108) paper is out in PNAS. Win! And a study  [on fire ant Odorant Binding Proteins](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0016289) in PLoS ONE. [Anurag Priyam](http://yeban.in) and are developing a [generic BLAST web interface](http://www.sequenceserver.com) in ruby. It's already super useful for our [fourmidable ant genome database](http://www.antgenomes.org), and I'm sure will be for others working with non-model organisms. (easy to use; less of a hassle to set up than gmod...). Using the server, you can [blast ant genome sequences](http://www.antgenomes.org/blast) (and predicted genes).
 
 
 

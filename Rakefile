@@ -2,7 +2,6 @@ require 'rubygems'
 require 'rake'
 require 'fileutils'
 
-new_page_ext = "markdown" # default new page file extension when using the new_page task
 
 # usage rake newpost[my-new-post] or rake newpost['my new post'] or rake newpost (defaults to "new-post")
 desc "Begin a new post in _posts"
@@ -60,10 +59,16 @@ end
 task :default => :start
 
 task :translit do
-  Rake::Task
     puts "\n ## Transliterating from utf-8 to ascii"
     system "find . -type f -name '*.markdown' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
     system "find . -type f -name '*.html' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
     system "find . -type f -name '*.md' -print -exec iconv -f utf-8 -t ascii//translit {} -o {} \\;"
     puts "\n ## Transliterating Done."
+end
+
+task :setlocale do
+    puts "\n setting locale to en_US.UTF-8"
+    system "LANG=\"en_US.UTF-8\""
+    system "LC_ALL=\"en_US.UTF-8\""
+    puts "\n locale set to en_US.UTF-8."
 end

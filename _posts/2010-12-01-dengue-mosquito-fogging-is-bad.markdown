@@ -13,7 +13,7 @@ Jakartans use "fogger" chemical sprays to fight dengue-transmitting _Aedes_ mosq
 
 
 
-[![Dengue Fogging Classroom by Hermitianta P. Putra](http://farm4.static.flickr.com/3575/3324727909_81fc3908a2.jpg)](http://www.flickr.com/photos/hermitianta/3324727909/)Photo © Hermitianta P. Putra
+[![Dengue Fogging Classroom by Hermitianta P. Putra](http://farm4.static.flickr.com/3575/3324727909_81fc3908a2.jpg)](http://www.flickr.com/photos/hermitianta/3324727909/)Photo (C) Hermitianta P. Putra
 
 
 
@@ -46,7 +46,7 @@ Probably for these reasons, fogging for dengue is **not** advised:
 
 
 
- 
+ 
 
 
 
@@ -56,4 +56,4 @@ The best approach is to eliminate all possible breeding sites: getting rid of ev
 
 
 
-[![Aedes aegypti © Wikipedia](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aedes_aegypti.jpg/800px-Aedes_aegypti.jpg)](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aedes_aegypti.jpg/800px-Aedes_aegypti.jpg)
+[![Aedes aegypti (C) Wikipedia](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aedes_aegypti.jpg/800px-Aedes_aegypti.jpg)](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aedes_aegypti.jpg/800px-Aedes_aegypti.jpg)

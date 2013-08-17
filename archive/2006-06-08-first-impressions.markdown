@@ -4,31 +4,31 @@ comments: true
 date: 2006-06-08 04:06:09
 layout: post
 slug: first-impressions
-title: First impressions - Athens Georgia été 2006
+title: First impressions - Athens Georgia ete 2006
 wordpress_id: 50
 ---
 
 Welcome to USA!
-ça y est - ça fait 2 jours que j'ai attéri à Atlanta pour me retrouver à Athènes... en Géorgie. Le fin fond du Sud ultraconservateur, chef lieu des rednecks, du white trash et des fourmis de feu.
+ca y est - ca fait 2 jours que j'ai atteri a Atlanta pour me retrouver a Athenes... en Georgie. Le fin fond du Sud ultraconservateur, chef lieu des rednecks, du white trash et des fourmis de feu.
 
-Premières impressions?
+Premieres impressions?
 
 
-
-	
-  * des êtres gargantuèsques. se déplaçant comme des c-3po usés
 
 	
-  * une brique de lait... jaune. Jaune? jaune. Mais quelle idée. Quelle injure!
+  * des etres gargantuesques. se deplacant comme des c-3po uses
+
+	
+  * une brique de lait... jaune. Jaune? jaune. Mais quelle idee. Quelle injure!
 
 	
   * des statues de pitbull a tous les coins de rue
 
 	
-  * le logement pas cher que j'ai trouvé est une chambre à l'université. je suis le seul blanc dans l'immeuble.
+  * le logement pas cher que j'ai trouve est une chambre a l'universite. je suis le seul blanc dans l'immeuble.
 
 
-à suivre...
+a suivre...
 
 
 ![](http://yannick.poulet.org/wordpress/wp-content/uploads/2006/06/bulldog.jpg)

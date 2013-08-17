@@ -35,4 +35,4 @@ Other issues which could be of interest for ants as well as generally concerning
 Lastly, ants appear to form the **ideal communist society**:
 
 "In our view, the competitive edge that led to the rise of the ants as a world-dominant group is their highly developed, self-sacrificial colonial existence. It would appear that socialism really works under some circumstances. Karl Marx just had the wrong species."
-_- [The Journey to the Ants](http://www.amazon.com/exec/obidos/tg/detail/-/0674485262/002-0350044-2478477?v=glance), Hölldobler and Wilson_
+_- [The Journey to the Ants](http://www.amazon.com/exec/obidos/tg/detail/-/0674485262/002-0350044-2478477?v=glance), Holldobler and Wilson_

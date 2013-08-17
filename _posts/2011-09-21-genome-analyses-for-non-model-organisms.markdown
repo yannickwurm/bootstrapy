@@ -13,12 +13,12 @@ tags:
 - sequencing
 ---
 
-Using modern molecular tools on emerging (non-model) organism makes it possible to address exciting new questions. But the data aren't as perfect they should be. In particular, genomes created from Roche 454, Illumina or ABI Solid sequence are **fragmented**: You wish you'd get a FASTA file with one long sequence per chromosome. Dream on! You get sequences for **dozens to thousands of scaffolds**. Each scaffold is a series of contigs, separated by stretches of unresolved NNNNNNNNN sequence (usually repetitive sequences). But the assembler knows these contigs are adjacent thanks to paired reads.
+Using modern molecular tools on emerging (non-model) organism makes it possible to address exciting new questions. But the data aren't as perfect they should be. In particular, genomes created from Roche 454, Illumina or ABI Solid sequence are **fragmented**: You wish you'd get a FASTA file with one long sequence per chromosome. Dream on! You get sequences for **dozens to thousands of scaffolds**. Each scaffold is a series of contigs, separated by stretches of unresolved NNNNNNNNN sequence (usually repetitive sequences). But the assembler knows these contigs are adjacent thanks to paired reads.
 
 
 
 
- 
+ 
 
 
 
@@ -28,7 +28,7 @@ Using modern molecular tools on emerging (non-model) organism makes it possible 
 
 
 
-Genome fragmentation can make things challenging. Some tips from my experience with [ant genomes](http://www.antgenomes.org):
+Genome fragmentation can make things challenging. Some tips from my experience with [ant genomes](http://www.antgenomes.org):
 
 
 
@@ -69,7 +69,7 @@ Genome fragmentation can make things challenging. Some tips from my experience 
 
 
 
-**How good is good enough?** Some sequence/data/scaffolds/models are missing or mediocre! But no biological dataset is ever perfect. If you're trying to make your emerging model organism's data perfect... you'll get nowhere fast. The [20% effort that bring you 80% of the way](http://en.wikipedia.org/wiki/Pareto_principle) will probably be good enough to answer your exciting biological question.
+**How good is good enough?** Some sequence/data/scaffolds/models are missing or mediocre! But no biological dataset is ever perfect. If you're trying to make your emerging model organism's data perfect... you'll get nowhere fast. The [20% effort that bring you 80% of the way](http://en.wikipedia.org/wiki/Pareto_principle) will probably be good enough to answer your exciting biological question.
 
 
 
@@ -78,4 +78,4 @@ Genome fragmentation can make things challenging. Some tips from my experience 
 
 
 
- 
+ 

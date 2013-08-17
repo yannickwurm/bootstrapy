@@ -20,9 +20,9 @@ Had a great two weeks visiting [John Wang's lab at Academia Sinica, Taiwan](http
 
 
 
- 
+ 
 
 
 
 
-In genomic news, the _Acromyrmex echinatior _leafcutter ant genome, led by [Sanne Nygaard](http://www1.bio.ku.dk/english/research/oe/cse/personer/sanne/) & [Koos Boosma](http://www1.bio.ku.dk/english/research/oe/cse/personer/koos/) is _in press_!  The data are already on [Fourmidable](http://www.antgenomes.org); and Fourmdiable's [ant genome BLAST interface](http://www.antgenomes.org) was updated to the latest [SequenceServer](http://www.sequenceserver.com).
+In genomic news, the _Acromyrmex echinatior _leafcutter ant genome, led by [Sanne Nygaard](http://www1.bio.ku.dk/english/research/oe/cse/personer/sanne/) & [Koos Boosma](http://www1.bio.ku.dk/english/research/oe/cse/personer/koos/) is _in press_!  The data are already on [Fourmidable](http://www.antgenomes.org); and Fourmdiable's [ant genome BLAST interface](http://www.antgenomes.org) was updated to the latest [SequenceServer](http://www.sequenceserver.com).
