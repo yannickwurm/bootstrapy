@@ -135,11 +135,9 @@ h6 {
 }
 
 p {
-    margin-bottom: 32px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
 }
+
 
 input, button, select, textarea {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -197,8 +195,7 @@ ol#search-results li {
     left: 10px;
     display: inline-block;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid white;
-    border-left: 6px solid transparent;
+    bor-bottomder-bottom: 6px solid white;
     content: '';
 }
 
@@ -219,6 +216,9 @@ ol#search-results li {
   -webkit-transition:background-color .2s;
   }
 
+.publication p {
+ margin-bottom: 0.3em;
+}
 .pager a.prev {
   left:0%;
   border-radius:0px 3px 3px 0px;
