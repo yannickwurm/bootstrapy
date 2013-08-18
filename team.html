@@ -3,17 +3,25 @@ layout: page
 title: The Team
 
 members:
-- name: Gaurav Koley
-  img: Photograph.jpg
-  about: hu ihi iin inui nu hui hui nui nui iu ni 
-- name: Koley
-  img: Potograph.jpg
-  about: hu ihnui nu hui hui nui nui iu ni 
+- name: Yannick Wurm
+  img: yannickwurm.jpg
+  about: Lab head. Strong interests in evolutionary genomics, social evolution, modern bioinformatics and genomics approaches, elegant software. [<a href="{{ site.url }}/cvYannickWurm.pdf"> Curriculum Vitae PDF</a>].
+
+- name: Anurag Priyam
+  img: anuragpriyam.jpg
+  about: BBSRC-funded creator of a <a href="https://github.com/yeban/afra">tool for crowd-sourcing curation of gene predictions</a>. From IIT Kharagphur. Created the <a href="http://www.sequenceserver.com">easy BLASTing tool Sequenceserver</a>. [<a href="http://yeban.in">Personal website</a>] [<a href="https://github.com/yeban">GitHub</a>]. 
+
+- name: Monica Dragan
+  img: monicaandreeadragan.jpg
+  about: <a href="http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013">NESCent Google Summer of Code</a> student from Department of Computer Science, Politehnica University of Bucharest. Developing <a href="https://github.com/monicadragan/gene_prediction">GeneValidator</a> a tool to identify problematic gene predictions. [<a href="http://gene-prediction.blogspot.co.uk/">Development Blog</a>].  
+
+
 ---
 {% for member in page.members %}
 <div class="span6">		<div class="caption">
 						<h3>{{ member.name }}</h3>
-						<img src="/img/{{ member.img }}" width="100" height="100" style="margin-right:10px" class="img-rounded pull-left">
+						<img src="/img/{{ member.img }}"
+  height="150" style="margin-right:10px; height:150px;" class="img-rounded pull-left">
 						<p>{{ member.about }} </p>
 					</div>
 
