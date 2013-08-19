@@ -87,6 +87,9 @@ class RubyScholar
                 doc.p {
                   doc.text ((@parser.parsedPapers).length - index).to_s + '. ' 
 
+                  doc.b    paper[:title] + '.'
+                  doc.text ' (' + paper[:year] + '). '
+
                   if paper[:authors].include?(@nameToHighlight)
                     doc.text( paper[:authors].sub(Regexp.new(@nameToHighlight + '.*'), '') )
                     doc.span( :class => "label label-info") { doc.text @nameToHighlight }
@@ -94,14 +97,11 @@ class RubyScholar
                   else
                     doc.text( paper[:authors])
                   end
-                                    
-                  doc.text ' ' + paper[:year] + '. '
-                  doc.b    paper[:title] + '.'
+
                   doc.br
                   doc.em   paper[:journalName]
                   doc.text ' '
                   doc.text paper[:journalDetails]
-                  
                   unless paper[ :doi].empty?
                     doc.text(' ')
                     doc.a( :href => URI.join("http://dx.doi.org/", paper[ :doi]))  { 
