@@ -64,23 +64,16 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 	  and Chemical Sciences, Mile End Road, E1 4NS London, UK. <br/>
   </p>
 
-<div class="Flexible-container">
+<div class="map">
 
-
-<style>
-     #map-canvas {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-    </style>
+    <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
 var map;
 function initialize() {
   var myLatlng = new google.maps.LatLng(51.528641599559336, -0.10192068590988011);
   var mapOptions = {
-    zoom: 4,
+    zoom: 12,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
