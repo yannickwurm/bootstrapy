@@ -63,10 +63,57 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 	  and Chemical Sciences, Mile End Road, E1 4NS London, UK. <br/>
   </p>
 
-<div class="Flexible-container">
+<div class="map">
+
+    <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+function initialize() {
+  var myLatlng = new google.maps.LatLng(51.528641599559336, -0.10192068590988011);
+  var mapOptions = {
+    zoom: 12,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Fogg building, Queen Mary University of London, E1 4NS, London, UK!'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 
-<iframe width="200" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?sll=51.528641599559336,-0.10192068590988011&amp;sspn=0.3781245504216291,0.5700080638372331&amp;t=m&amp;q=Fogg+Bldg,+London,+UK&amp;dg=opt&amp;ie=UTF8&amp;hq=&amp;hnear=Fogg+Bldg,+London+E1+4DQ,+United+Kingdom&amp;ll=51.523501,-0.042232&amp;spn=0.010894,0.007682&amp;z=5&amp;iwloc=A&amp;output=embed"></iframe><br />
+    </script>
+    <div id="map-canvas"></div>
+<style>
+      html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(51.528641599559336, -0.10192068590988011),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    <div id="map-canvas"></div>
 </div>
 [<a href="http://maps.google.com/?q=Fogg building, Queen Mary University of London, E1 4NS, London, UK">Larger Map</a>]
 
@@ -82,7 +129,7 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 <div class="span11">
   <h3>Publications</h3>
 
-	{% include publications.html %}	
+	{% include publications.html %}	</section>
 
 <!--  <h3>Misc</h3>
   <ul>
