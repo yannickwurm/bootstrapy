@@ -37,7 +37,7 @@ Please make sure there is only one version of jquery installed.
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     {% include navigation.html %}
     <div class="container">
-      <div class="row">
+      <div class="row-fluid">
 	<div class="span11">
      <div class="jumbotron">
       <div class="container">
@@ -49,8 +49,10 @@ Please make sure there is only one version of jquery installed.
 
 	
       </div>
-      <div class="row span11">
-        {{ content }}
+      <div class="row-fluid">
+          <div class="span11">
+             {{ content }}
+          </div>
       </div>
     </div>
     <hr />
