@@ -2,9 +2,8 @@
 layout: page
 title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 ---
-
-<div class="span8 columns" >
-
+<div class="row-fluid">
+<div class="span8 column" >
 <h3>Research</h3>
   <p><strong>Evolutionary genomics of social insects. </strong>
 	Extensive theoretical work has explained how and why complex
@@ -54,7 +53,7 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 </div>
 
 
-<div class="span3">
+<div class="span4">
   <h3>Contact</h3>
   
   <p><i class="icon-envelope"></i>  <strong>y.wurm [at] qmul.ac.uk</strong></p>
@@ -64,10 +63,42 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
 	  and Chemical Sciences, Mile End Road, E1 4NS London, UK. <br/>
   </p>
 
-<div class="Flexible-container">
+<div class="map">
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
 
+<script>
+var myCenter=new google.maps.LatLng(51.5234907999994,-0.0422141920265707);
 
-<iframe width="200" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?sll=51.528641599559336,-0.10192068590988011&amp;sspn=0.3781245504216291,0.5700080638372331&amp;t=m&amp;q=Fogg+Bldg,+London,+UK&amp;dg=opt&amp;ie=UTF8&amp;hq=&amp;hnear=Fogg+Bldg,+London+E1+4DQ,+United+Kingdom&amp;ll=51.523501,-0.042232&amp;spn=0.010894,0.007682&amp;z=5&amp;iwloc=A&amp;output=embed"></iframe><br />
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:300px;height:300px;"></div>
+</body>
+</html>
 </div>
 [<a href="http://maps.google.com/?q=Fogg building, Queen Mary University of London, E1 4NS, London, UK">Larger Map</a>]
 
@@ -78,12 +109,12 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
   a Postdoc position, please provide by email a CV, contact info of
 	  references and a proposed project. </p>
 </div>
+</div>
+<div class="row-fluid">
+<div class="span11" id="publications">
+  <h3>Publications</h3>
 
-
-<div class="span11">
-  <h3>Publications</h3> <section id="publications">
-
-	{% include publications.html %}	
+	{% include publications.html %}	</section>
 
 <!--  <h3>Misc</h3>
   <ul>
@@ -106,12 +137,11 @@ title: Ants, Genomes & Evolution Lab @ Queen Mary University Lodnon
   </ul>
 
 -->
+<hr>
 </div>
-
 </div>
-<hr/>
-<div class="row">
-<div class="span3 column">
+<div class="row-fluid">
+<div class="span4 column">
  <a class="twitter-timeline" href="https://twitter.com/yannick__" data-widget-id="368748443126099971">Tweets by @yannick__</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
