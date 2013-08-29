@@ -20,6 +20,8 @@
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script type='text/javascript' src="{{ site.url }}/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="{{ site.url }}/js/custom.js"></script>
 <!-- 
 Jquery libraries for additional client side functionalities
 Please make sure there is only one version of jquery installed.
@@ -49,8 +51,10 @@ Please make sure there is only one version of jquery installed.
 
 	
       </div>
-      <div class="row span11">
-        {{ content }}
+      <div class="row">
+          <div class="span11">
+             {{ content }}
+          </div>
       </div>
     </div>
     <hr />
