@@ -20,6 +20,8 @@
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script type='text/javascript' src="{{ site.url }}/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="{{ site.url }}/js/custom.js"></script>
 <!-- 
 Jquery libraries for additional client side functionalities
 Please make sure there is only one version of jquery installed.
@@ -37,7 +39,7 @@ Please make sure there is only one version of jquery installed.
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     {% include navigation.html %}
     <div class="container">
-      <div class="row-fluid">
+      <div class="row">
 	<div class="span11">
      <div class="jumbotron">
       <div class="container">
@@ -49,7 +51,7 @@ Please make sure there is only one version of jquery installed.
 
 	
       </div>
-      <div class="row-fluid">
+      <div class="row">
           <div class="span11">
              {{ content }}
           </div>

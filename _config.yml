@@ -3,7 +3,7 @@ pygments: true
 
 title: Ants, Genomes & Evolution Lab @ Queen Mary University London
 
-url: http://arkokoley.github.io/bootstrapy
+url: http://localhost:4000
 
 permalink: "/news/:year-:month-:day-:title/"
 paginate: 4
