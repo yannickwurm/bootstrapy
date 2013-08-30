@@ -92,16 +92,14 @@ class RubyScholar
 
                   if paper[:authors].include?(@nameToHighlight)
                     doc.text( paper[:authors].sub(Regexp.new(@nameToHighlight + '.*'), '') )
-                    doc.span( :class => "label label-info") { doc.text @nameToHighlight }
+                    doc.span( :class => "label") { doc.text @nameToHighlight }
                     doc.text( paper[:authors].sub(Regexp.new('.*' + @nameToHighlight), '') )
                   else
-                    doc.text( paper[:authors])
+                    doc.text( paper[:authors]) + '.'
                   end
 
-                  doc.br
-                  doc.em   paper[:journalName]
-                  doc.text ' '
-                  doc.text paper[:journalDetails]
+                  doc.em   ' ' + paper[:journalName]
+                  doc.text ' ' + paper[:journalDetails]
                   unless paper[ :doi].empty?
                     doc.text(' ')
                     doc.a( :href => URI.join("http://dx.doi.org/", paper[ :doi]))  { 
@@ -116,8 +114,8 @@ class RubyScholar
                   end
                   if paper[ :citationCount].to_i > @minCitations
                     doc.text(' ')
-                    doc.a( :href => paper[ :citingPapers]) { 
-                      doc.text("[Cited #{paper[ :citationCount]}x]") 
+                    doc.a( :href => paper[ :citingPapers], :title => "Citations") { 
+                      doc.span( :class => "badge badge-inverse") { doc.test("#{paper[ :citationCount]}x") }
                     } 
                   end
                   if altmetricDOIs.include?( paper[ :doi])
