@@ -20,6 +20,12 @@
     height: 100%;
 }
 
+.label {
+padding:2px;
+}
+.badge {
+padding:2px;
+}
 
 .jumbotron {
  background-image:url('{{ site.url }}/img/fireAntMicroarrays.jpg');
@@ -32,6 +38,7 @@
  border-top: 0;
  font-weight: bold;
 }
+
 .jumbotron h1 {
   padding-left: 10px;
   padding-top: 120px;
@@ -165,6 +172,7 @@ h6 {
     line-height: 24px;
 }
 
+
 p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -194,7 +202,9 @@ input, button, select, textarea {
 
 .publication p {
  margin-bottom: 0.3em;
+ text-align:justify;
 }
+
 .pager a.prev {
   left:0%;
   border-radius:0px 3px 3px 0px;
