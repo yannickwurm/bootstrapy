@@ -31,19 +31,20 @@ padding:2px;
  background-image:url('{{ site.url }}/img/fireAntMicroarrays.jpg');
  background-repeat: no-repeat; 
  /* height:202px;  width:900px;*/
- width: 1070px;
- height: 240px;
- background-size: 100%;
- border: 1px solid #2c3e50;
- border-top: 0;
+/* width: 1070px;
+ height: 240px;*/
+ background-size: cover;
+ background-postion: right;
+ /* border: 1px solid #2c3e50;
+ border-top: 0; */
  font-weight: bold;
 }
 
 .jumbotron h1 {
   padding-left: 10px;
-  padding-top: 120px;
+  padding-top: 10%;
   padding-bottom: 0px;
-   margin-bottom:0;
+  margin-bottom:0;
   letter-spacing: -1px;
 }
 
@@ -72,117 +73,6 @@ img.img-rounded {
     border-radius: 6px;
 }
 
-a.social {
-  display: block;
-  width: 34px;
-  height: 34px;
-  background: url(/img/social_icons.png);
-  margin: 3px;
-}
-
-a.social.github {
-  background: url(/img/social_icons.png) -68px 0px no-repeat;
-}
-
-a.social.github:hover {
-  background: url(/img/social_icons.png) -68px -34px no-repeat;
-}
-
-a.social.linkedin {
-  background: url(/img/social_icons.png) -102px 0px no-repeat;
-}
-
-a.social.linkedin:hover {
-  background: url(/img/social_icons.png) -102px -34px no-repeat;
-}
-
-a.social.twitter {
-  background: url(/img/social_icons.png) 0 0px no-repeat;
-}
-
-a.social.twitter:hover {
-  background: url(/img/social_icons.png) 0px -34px no-repeat;
-}
-
-a.social.rss {
-  background: url(/img/social_icons.png) -34px 0px no-repeat;
-}
-
-a.social.rss:hover {
-  background: url(/img/social_icons.png) -34px -34px no-repeat;
-}
-
-a.social.mail {
-  background: url(/img/social_icons.png) -136px 0px no-repeat;
-}
-
-a.social.mail:hover {
-  background: url(/img/social_icons.png) -136px -34px no-repeat;
-}
-
-a.social.gplus {
-  background: url(/img/social_icons.png) -170px 0px no-repeat;
-}
-
-a.social.gplus:hover {
-  background: url(/img/social_icons.png) -170px -34px no-repeat;
-}
-
-body {
-    margin: 0;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #444444;
-    background-color:;
-}
-
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 38px;
-    line-height: 57px;
-}
-
-h2 {
-    font-size: 32px;
-    line-height: 48px;
-}
-
-h3 {
-    font-size: 26px;
-    line-height: 39px;
-}
-
-h4 {
-    font-size: 22px;
-    line-height: 33px;
-}
-
-h5 {
-    font-size: 18px;
-    line-height: 27px;
-}
-
-h6 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-
-p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-
-input, button, select, textarea {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-*/
 /* Next/Prev pager */
 .pager a {
   position:fixed;
@@ -203,7 +93,16 @@ input, button, select, textarea {
 .publication p {
  margin-bottom: 0.3em;
  text-align:justify;
+ display: block;
+ padding-left: 30px;
+ text-indent: -30px;
 }
+
+.publication span {
+ text-indent: 3px;
+}
+
+
 
 .pager a.prev {
   left:0%;
@@ -230,4 +129,14 @@ text-align:justify;
 padding: 10px;
 margin-left:100px;
 background-color: rgb(29, 210, 175);
+}
+
+@media (max-width: 480px) { 
+  .jumbotron h1 {
+    font-size: 28px;
+    padding-top: 0;
+  }
+  .jumbotron h2 {
+    font-size: 21px;
+  }
 }
