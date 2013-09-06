@@ -9,7 +9,7 @@ highlight: "Y Wurm"
 # using their OpenURL service. 
 # e.g. the following should provide an XML file: 
 # http://www.crossref.org/openurl?redirect=false&pid=YOUR@EMAIL>COM&aulast=Wurm&atitle=Behavioral%20Genomics:%20A,%20Bee,%20C,%20G,%20T
-email: your@email.com
+email: y.wurm@qmul.ac.uk
 
 
 # Show "[Cited Nx]" if N > the following number
@@ -20,6 +20,7 @@ italicize:
  - Solenopsis invicta
  - Acromyrmex echinatior
  - de novo
+ - Pogonomyrmex barbatus
 
 # DOIs of articles for which we should show altmetric.org badges. 
 altmetricDOIs: 
@@ -27,6 +28,8 @@ altmetricDOIs:
  - "10.1101/gr.121392.111"
  - "10.1073/pnas.1009690108"
  - "10.1073/pnas.1104825108"
+ - "10.1101/gr.155408.113"
+
 
 # Article titles for which we have urls to PDFs
 pdfs:

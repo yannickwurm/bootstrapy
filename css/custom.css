@@ -140,3 +140,8 @@ background-color: rgb(29, 210, 175);
     font-size: 21px;
   }
 }
+
+
+p, ol, li {
+padding-left:5px;
+}
