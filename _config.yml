@@ -6,8 +6,6 @@ title: Ants, Genomes & Evolution @ Queen Mary University London
 url: http://localhost:4000
 
 permalink: "/news/:year-:month-:day-:title/"
-paginate: 4
-paginate_file: news/index.html
 
 author:
     name: Yannick Wurm
