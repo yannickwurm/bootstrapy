@@ -81,52 +81,50 @@ class RubyScholar
     def to_html
       ##@doc = Nokogiri::HTML::DocumentFragment.parse "" 
       builder = Nokogiri::HTML::Builder.new do |doc|
-	  doc.div( :class => "publication") {
-	#	doc.h3("Publications")
-            @parser.parsedPapers.each_with_index { |paper, index|
-                doc.p {
-                  doc.text ((@parser.parsedPapers).length - index).to_s + '. ' 
+        doc.div( :class => "publication") {
+          @parser.parsedPapers.each_with_index { |paper, index|
+            doc.li( :value=> ( (@parser.parsedPapers).length - index).to_s)  {
+              
+              doc.b    paper[:title] + '.'
+              doc.text ' (' + paper[:year] + '). '
+              
+              if paper[:authors].include?(@nameToHighlight)
+                doc.text( paper[:authors].sub(Regexp.new(@nameToHighlight + '.*'), '') )
+                doc.span( :class => "label") { doc.text @nameToHighlight }
+                doc.text( paper[:authors].sub(Regexp.new('.*' + @nameToHighlight), '') )
+              else
+                doc.text( paper[:authors]) + '.'
+              end
 
-                  doc.b    paper[:title] + '.'
-                  doc.text ' (' + paper[:year] + '). '
-
-                  if paper[:authors].include?(@nameToHighlight)
-                    doc.text( paper[:authors].sub(Regexp.new(@nameToHighlight + '.*'), '') )
-                    doc.span( :class => "label") { doc.text @nameToHighlight }
-                    doc.text( paper[:authors].sub(Regexp.new('.*' + @nameToHighlight), '') )
-                  else
-                    doc.text( paper[:authors]) + '.'
-                  end
-
-                  doc.em   ' ' + paper[:journalName]
-                  doc.text ' ' + paper[:journalDetails]
-                  unless paper[ :doi].empty?
-                    doc.text(' ')
-                    doc.a( :href => URI.join("http://dx.doi.org/", paper[ :doi]))  { 
-                      doc.text "[DOI]" 
-                    } 
-                  end
-                  if @pdfLinks.keys.include?(paper[:title])
-                    doc.text(' ')
-                    doc.a( :href => @pdfLinks[paper[:title]])  { 
-                      doc.text "[PDF]"
-                    } 
-                  end
-                  if paper[ :citationCount].to_i > @minCitations
-                    doc.text(' ')
-                    doc.a( :href => paper[ :citingPapers], :title => "Citations") { 
-                      doc.span( :class => "badge badge-inverse") { doc.test("#{paper[ :citationCount]}x") }
-                    } 
-                  end
-                  if altmetricDOIs.include?( paper[ :doi])
-                    doc.text(' ')
-                    doc.span( :class                => 'altmetric-embed',
-                              :'data-badge-popover' => 'bottom',
-                              :'data-doi'           => paper[ :doi]        )
-                  end
-                }
-              }
+              doc.em   ' ' + paper[:journalName]
+              doc.text ' ' + paper[:journalDetails]
+              unless paper[ :doi].empty?
+                doc.text(' ')
+                doc.a( :href => URI.join("http://dx.doi.org/", paper[ :doi]))  { 
+                  doc.text "[DOI]" 
+                } 
+              end
+              if @pdfLinks.keys.include?(paper[:title])
+                doc.text(' ')
+                doc.a( :href => @pdfLinks[paper[:title]])  { 
+                  doc.text "[PDF]"
+                } 
+              end
+              if paper[ :citationCount].to_i > @minCitations
+                doc.text(' ')
+                doc.a( :href => paper[ :citingPapers], :title => "Citations") { 
+                  doc.span( :class => "badge badge-inverse") { doc.test("#{paper[ :citationCount]}x") }
+                } 
+              end
+              if altmetricDOIs.include?( paper[ :doi])
+                doc.text(' ')
+                doc.span( :class                => 'altmetric-embed',
+                          :'data-badge-popover' => 'bottom',
+                          :'data-doi'           => paper[ :doi]        )
+              end
             }
+          }
+        }
       end
       return builder.to_html
     end
