@@ -1,3 +1,6 @@
+Based on https://github.com/cboettig/labnotebook
+
+
 ## How this works
 
 * Edit your files in place (eg. index.html, team.html) or write a new post.
