@@ -74,3 +74,8 @@ task :setlocale do
     system "LC_ALL=\"en_US.UTF-8\""
     puts "## Locale set to en_US.UTF-8."
 end
+
+
+task :uploadToPoulet do
+   system "lftp -e 'mirror -R _site/ /httpdocs/' -u yannick taho.p4x.net"
+end
