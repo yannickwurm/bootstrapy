@@ -4,7 +4,6 @@ url: "http://scholar.google.com/citations?hl=en&user=k6y0EGsAAAAJ&sortby=pubdate
 # Name to highlight 
 highlight: "Y Wurm"
 
-
 # Need an Email address that has been registered with CrossRef to obtain DOIs 
 # using their OpenURL service. 
 # e.g. the following should provide an XML file: 
@@ -50,3 +49,5 @@ pdfs:
   "Fourmidable: a database for ant genomics" : "/publications/wurm2009antDatabase.pdf"
   "Behavioral Genomics: A, Bee, C, G, T" : "/publications/wurm2007bees.pdf"
   "An annotated cDNA library and microarray for large-scale gene-expression studies in the ant Solenopsis invicta" : "/publications/wang2007fireAntMicroarrays.pdf"
+  "Sociogenomics of Cooperation and Conflict during Colony Founding in the Fire Ant Solenopsis invicta" : "/publications/manfredini2013plosg.pdf"
+  "Vitellogenin underwent subfunctionalization to acquire caste and behavioral specific expression in the harvester ant Pogonomyrmex barbatus" : "/publications/corona2013plosg.pdf"
