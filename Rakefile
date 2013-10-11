@@ -77,5 +77,5 @@ end
 
 
 task :uploadToPoulet do
-   system "lftp -e 'mirror -R _site/ /httpdocs/' -u yannick taho.p4x.net"
+   system "lftp -e 'mirror -R _site/ /httpdocs' -u yannick taho.p4x.net"
 end
