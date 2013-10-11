@@ -3,7 +3,7 @@ pygments: true
 
 title: Ants, Genomes & Evolution @ Queen Mary University London
 
-url: http://yannick.poulet.org
+url: /./
 
 permalink: "/news/:year-:month-:day-:title/"
 
