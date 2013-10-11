@@ -56,7 +56,7 @@ class RubyScholar
     # But if registered at crossref (its free), DOI can be retreived. 
     def getDoi(lastNameFirstAuthor, title, crossRefEmail)
       return '' if @crossRefEmail.nil?
-      sleep(1) # to reduce risk 
+      sleep(rand(50..200)/100.0 ) # to reduce risk 
       STDERR << "Getting DOI for paper by #{lastNameFirstAuthor}: #{title}.\n"
       url = 'http://www.crossref.org/openurl?redirect=false' +  
         '&pid='    + crossRefEmail + 
