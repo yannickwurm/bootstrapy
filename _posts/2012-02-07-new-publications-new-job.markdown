@@ -1,6 +1,6 @@
 ---
 author: yannick
-comments: true
+comments: false
 date: 2012-02-07 13:24:20
 layout: post
 slug: new-publications-new-job
