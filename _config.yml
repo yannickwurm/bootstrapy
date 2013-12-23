@@ -14,15 +14,16 @@ author:
     twitter: yannick__
     gravatar: 
 
-comments:
-    provider: disqus
-    disqus:
-        short_name: 
-        
+#comments:
+#    provider: disqusasdf
+#    disqus: yannickwurm
+#        short_name: "yannickwurm"
+#    disqus_name: "adsf"
+
 analytics:
     provider: google 
     google: 
         tracking_id: 'UA-471841-2'
         domain: 'yannick.poulet.org'
 
-exclude: README.md, Gemfile, Gemfile.lock, Rakefile
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile']
