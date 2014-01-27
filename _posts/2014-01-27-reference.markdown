@@ -9,7 +9,7 @@ If you need a reference letter from me, I need you to write a first draft. First
 
 Your draft should in the form of a letter from me about you (yes, it can feel awkward to write like this). You basically need to say that you are a great and justify why). Some general tips: 
 
-* Please respect the style guidelines given by <a href="http://www.amazon.co.uk/gp/product/020530902X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=020530902X&linkCode=as2&tag=myhome0f0e-21">Strunk & White's "The Elements of Style"</a>.  Keep it concise. 
+* Please respect the style guidelines given by <a href="http://www.amazon.co.uk/gp/product/020530902X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=020530902X&linkCode=as2&tag=yannickwurm-21">Strunk & White's "The Elements of Style"</a>.  Keep it concise. 
 * Use a spell-checker and a grammar-checker (on strict mode!).
 * It's better if the examples you use are relevant to the degree you're applying to.
 * Don't highlight weaknesses. E.g. if you have a "C" in something don't mention it. 
