@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: post
 title: Reference Letters
 date: 2014-01-27
 ---
 
+Current or former students *very regularly* ask me for a reference to help them apply for a job or a new study program. The process is facilitated & the letter is improved by the following advice. 
 
 If you need a reference letter from me, I need you to write a first draft. First, you are best positioned to know what makes you great for what you're applying for. Second, you'll end up with a better letter if my time is spent revising something than if I try to create something from scratch. 
 
