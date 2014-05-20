@@ -34,6 +34,14 @@ tools:
   status      : Alpha. Work in progress.
   status_icon : fa-warning
 
+- name        : TGNet - Transcript-genome consistency
+  img         : tgnet.jpg
+  code        : https://github.com/ksanao/TGNet
+  about       : <a href="https://github.com/ksanao/TGNet">TGNet</a> is a <a href="http://www.cytoscape.org">Cytoscape</a>-based tool for visualization and quality assessment of de novo genome assemblies. Specifically it facilitates rapid detection of inconsistencies between a genome assembly and an independently derived transcriptome assembly. Developed by <a href="http://scholar.google.co.uk/citations?user=aovYPpkAAAAJ&hl=en">Oksana Riba-Grognuz</a>.
+  paper       : http://bioinformatics.oxfordjournals.org/content/27/24/3425
+  status_icon : fa-certificate
+  status      : Used for <a href="http://www.pnas.org/content/early/2011/01/24/1009690108">fire ant genome</a> project. Published in <a href="http://bioinformatics.oxfordjournals.org/lookup/doi/10.1093/bioinformatics/btr569">Bioinformatics</a>. 
+ 
 
 repositories:
  - name: Anurag Priyam
@@ -71,8 +79,8 @@ repositories:
 	  </ul>
 	</div>
 	  <div class="row">
-		<img src="/img/{{ tool.img }}" align="right"
-		style="margin-right:10px; height:220px;">
+		<a href="{{ tool.url }}"><img src="/img/{{ tool.img }}" alt="{{ tool.name }}" align="right"
+		style="margin-right:10px; height:180px;"></a>
 	  </div>
 	<div class="row">
 	  <ul class="fa-ul">
