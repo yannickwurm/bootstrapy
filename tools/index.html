@@ -3,10 +3,10 @@ layout: page
 title: tools and code
 
 tools:
-- name        : Fourmidable-Antgenomes
+- name        : Antgenomes.org
   img         : antgenomes.png
   url         : http://antgenomes.org
-  about       : Community database centralizing genomic and transcriptomic sequence information for ants. 
+  about       : Initially known as Fourmidable. Community database centralizing genomic and transcriptomic sequence information for ants. 
   paper : /publications/wurm2009antDatabase.pdf
   status      : Used by hundreds of researchers. 
   status_icon : fa-certificate
@@ -30,11 +30,11 @@ tools:
 - name        : GeneValidator
   img         : genevalidator.png
   code        : https://github.com/monicadragan/GeneValidator
-  about       : Tool to identify problematic gene predictions. Funded by <a href="http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013">NESCent Google Summer of Code 2013</a>.
+  about       : Tool to identify problematic gene predictions based on comparison with gene predictions in public databases. Funded by <a href="http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013">NESCent Google Summer of Code 2013</a>.
   status      : Alpha. Work in progress.
   status_icon : fa-warning
 
-- name        : TGNet - Transcript-genome consistency
+- name        : Transcript-genome consistency network
   img         : tgnet.jpg
   code        : https://github.com/ksanao/TGNet
   about       : <a href="https://github.com/ksanao/TGNet">TGNet</a> is a <a href="http://www.cytoscape.org">Cytoscape</a>-based tool for visualization and quality assessment of de novo genome assemblies. Specifically it facilitates rapid detection of inconsistencies between a genome assembly and an independently derived transcriptome assembly. Developed by <a href="http://scholar.google.co.uk/citations?user=aovYPpkAAAAJ&hl=en">Oksana Riba-Grognuz</a>.
@@ -56,34 +56,16 @@ repositories:
 ---
 
 <div class="row">
-<h3>Source code repositories</h3>
-  <p>Several <a href="/team.html">team members</a> have open source
-  code repositories which include all sorts of useful scripts: </p>
-  <ul class="fa-ul">
-	{%for member in page.repositories %}
-	<li><i class="fa-li fa fa-github"></i><a
-	href="{{member.repository}}">{{ member.name }}'s GitHub</a></li>
-	{%endfor %}
-  </ul>
-
-  
-  <h3>We develop several major tools:</h3>
+  <h3>Major tools we develop include:</h3>
   {% for tool in page.tools %}
   <div class="span5">
     <div class="caption">
+      <a href="{{ tool.url }}"><img src="/img/{{ tool.img }}" alt="{{ tool.name }}" align="right"
+				    style="margin-right:10px; height:180px;"></a>
       <h4>{{ tool.name }}</h4>
 	<div class="row">
 	  <ul class="fa-ul">
-		<li><i class="fa-li fa
-		{{tool.status_icon}}"></i>{{tool.status}}</li>
-	  </ul>
-	</div>
-	  <div class="row">
-		<a href="{{ tool.url }}"><img src="/img/{{ tool.img }}" alt="{{ tool.name }}" align="right"
-		style="margin-right:10px; height:180px;"></a>
-	  </div>
-	<div class="row">
-	  <ul class="fa-ul">
+		<li><i class="fa-li fa {{tool.status_icon}}"></i>{{tool.status}}</li>
 		<li><i class="fa-li fa fa-info-circle"></i>{{ tool.about }}</li>
 		{% if tool.code %}  <li><i class="fa-li fa fa-code"></i><a href="{{tool.code}}">{{ tool.code }}</a></li>{%endif%}
 		{% if tool.url %}   <li><i class="fa-li fa fa-external-link-square"></i><a href="{{tool.url}}">{{ tool.url }}</a></li>{%endif%}
@@ -112,5 +94,17 @@ testing &amp; continuous integration. We develop mostly in:</p>
   <li>But also use bash/python/perl when convenient or necessary...</li>
 </ul>
 <p>But we love quick and dirty hacks too <i class="fa fa-smile-o"></i>.</p>
+
+<h3>Source code repositories</h3>
+<p>Several <a href="/team.html">team members</a> have open source
+  code repositories which include all sorts of useful scripts: </p>
+<ul class="fa-ul">
+	{%for member in page.repositories %}
+	<li><i class="fa-li fa fa-github"></i><a
+	href="{{member.repository}}">{{ member.name }}'s GitHub</a></li>
+	{%endfor %}
+</ul>
+
+  
 
 
