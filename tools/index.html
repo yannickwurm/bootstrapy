@@ -19,6 +19,15 @@ tools:
   status      : Deployed in dozens of institutions.
   status_icon : fa-certificate
 
+- name        : BioNode
+  img         : tools/bionode.png
+  url         : http://bionode.io
+  code        : http://bionode.io
+  status      : Used in production. Development ongoing. Contributors welcome. 
+  about       : <a href="http://bionode.io">BioNode</a> is <a href="http://nodejs.org">Node.js</a> JavaScript library for <a href="http://bionode.io">client and server side bioinformatics</a>.
+  status_icon : fa-certificate
+
+
 - name        : "Codename Afra"
   img         : afra.png
   url         : http://afra.sbcs.qmul.ac.uk
@@ -60,20 +69,22 @@ repositories:
   {% for tool in page.tools %}
   <div class="span5">
     <div class="caption">
-      <a href="{{ tool.url }}"><img src="/img/{{ tool.img }}" alt="{{ tool.name }}" align="right"
-				    style="margin-right:10px; height:180px;"></a>
       <h4>{{ tool.name }}</h4>
 	<div class="row">
+	  <a href="{{ tool.url }}"><img src="/img/{{ tool.img }}" alt="{{ tool.name }}" align="right"
+				    style="margin-right:10px; height:180px;"/></a>
 	  <ul class="fa-ul">
-		<li><i class="fa-li fa {{tool.status_icon}}"></i>{{tool.status}}</li>
-		<li><i class="fa-li fa fa-info-circle"></i>{{ tool.about }}</li>
-		{% if tool.code %}  <li><i class="fa-li fa fa-code"></i><a href="{{tool.code}}">{{ tool.code }}</a></li>{%endif%}
-		{% if tool.url %}   <li><i class="fa-li fa fa-external-link-square"></i><a href="{{tool.url}}">{{ tool.url }}</a></li>{%endif%}
-  		{% if tool.paper %} <li><i class="fa-li fa fa-file-text"></i><a href="{{tool.paper}}">Publication</a></li>{%endif%}
+	    <li><i class="fa-li fa {{tool.status_icon}}"></i>{{tool.status}}</li>
+	    <li><i class="fa-li fa fa-info-circle"></i>{{ tool.about }}</li>
+	    {% if tool.code %}  <li><i class="fa-li fa fa-code"></i><a href="{{tool.code}}">{{ tool.code }}</a></li>{%endif%}
+	    {% if tool.url %}   <li><i class="fa-li fa fa-external-link-square"></i><a href="{{tool.url}}">{{ tool.url }}</a></li>{%endif%}
+  	    {% if tool.paper %} <li><i class="fa-li fa fa-file-text"></i><a href="{{tool.paper}}">Publication</a></li>{%endif%}
 
 	  </ul>
-	  </div>
-	  </div>
+
+
+	</div>
+  </div>
   </div>
   {% cycle '', '</div><div class="row">' %} 
   {% endfor %}
@@ -90,7 +101,7 @@ testing &amp; continuous integration. We develop mostly in:</p>
   <li><a href="http://bioruby.org">ruby/bioruby</a> (when making
   pipelines, text &amp; backends;</li>
   <li><a href="http://rproject.org">R</a> for number crunching</li>
-  <li>javascript/html/css for client-side stuff</li>
+  <li>javascript/html/css for client-side stuff and some <a href="http://bionode.io">bioinformatics analysis pipelines</a></li>
   <li>But also use bash/python/perl when convenient or necessary...</li>
 </ul>
 <p>But we love quick and dirty hacks too <i class="fa fa-smile-o"></i>.</p>
