@@ -48,7 +48,7 @@ talks:
      <div class="span5">
 
     {% if talk.label %}
-	   
+	   <a name="{{talk.label}}"></a>
     {% endif %}
     {% if talk.contexturl %}
       <h3><a href="{{talk.contexturl}}">{{ talk.context }}</a></h3>
