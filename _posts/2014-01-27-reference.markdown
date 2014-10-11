@@ -23,18 +23,18 @@ Your draft should in the form of a letter from me about you (yes, it can feel aw
 Introductory paragraph. This should include: 
 
  * Why I am writing
- * Why I know you well (eg. I am your advisor/supervisor).
+ * Why I know you well (e.g., I am your academic advisor/tutor/supervisor/lecturer since at Queen Mary since xxx when you started your degree in XX). 
  * Which degree you are doing and when you are expected to graduate. 
- * The last sentence should be a small list of ideas (see below), summarizing why you are great for the opportunity you're applying to. This also announces the structure of the next few paragraphs.
+ * The last sentence should be a small list of ideas (see below), summarizing why you are great for the opportunity you're applying to. This also announces the structure of the subsequent pre-conclusion paragraphs (i.e., it should end with a list of 2 or 3 or 4 items as below). 
 
 
 One paragraph per idea (no ping-ponging back and forth!). Some examples of ideas: 
 
- * evidence that you are serious & hardworking  (e.g., based on your project)
- * academic achievements (e.g., coursework or overall grades, your perception of your final grade ("first?"))
+ * academic achievements (e.g., coursework or overall grades, predicted final grade ("first?"))
+ * evidence that you are dedicated/serious/hardworking/intelligent/creative (e.g., based on your project, punctuality, behavior in tutorials). 
+ * evidence that you have a good personality (e.g., social intelligence, teamwork, helping others). 
  * extra-curricular activities (jobs, volunteering)
- * evidence that you're a kind person (helping others). 
 
 Conclusion: a quick summary stating that you're great for the degree/program/job because of the 3 or 4 ideas. 
 
-
+Overall, the reference should not take more than 1 page - people are unlikely to read anything that is longer. 
