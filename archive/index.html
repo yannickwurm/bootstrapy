@@ -24,3 +24,13 @@ description: Yannick Wurm. I am an evolutionary biologist trying to understand t
 	
   </ul>
 
+<h3>Very old blogging</h3>
+<div class="span10 column">
+<p>From past lives</p>
+<br>
+{% for post in site.categories.oldblogarchive offset: 0 limit: 50 %}
+<div class="row">
+  <span class="pull-left"><strong><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></strong></span>
+    <span class="pull-right">{{ post.date | date: "%B %e, %Y" }}</span>
+</div>
+{% endfor %}
