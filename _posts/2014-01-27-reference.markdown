@@ -38,3 +38,6 @@ One paragraph per idea (no ping-ponging back and forth!). Some examples of ideas
 Conclusion: a quick summary stating that you're great for the degree/program/job because of the 3 or 4 ideas. 
 
 Overall, the reference should not take more than 1 page - people are unlikely to read anything that is longer. 
+
+---
+Thanks to <a href='http://www2.le.ac.uk/departments/biology/people/hammond'>Rob Hammond</a> for telling me about <a href="http://www.amazon.co.uk/gp/product/020530902X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=020530902X&linkCode=as2&tag=yannickwurm-21">The Elements of Style</a> years ago. 
