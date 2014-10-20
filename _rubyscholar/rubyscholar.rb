@@ -23,23 +23,28 @@ class RubyScholar
     end
 
     def parse(url)
-      papers = Nokogiri::HTML(open(url)).css(".cit-table .item")
-      STDERR << "Found #{papers.length} papers.\n"
+      page = Nokogiri::HTML(open(url,
+                                 'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2'), nil, 'utf-8')
+      papers = page.css(".gsc_a_tr")
+      STDERR << "Found #{papers.length} papers.\n" 
+
       papers.each do |paper|
-        paperDetails   = paper.css("#col-title")
-        title          = paperDetails[0].children[0].content.clean  rescue ''
-        googleUrl      = paperDetails[0].children[0].attribute('href') rescue ''
-        authors        = paperDetails[0].children[2].content.clean rescue ''
+        title          = paper.css(".gsc_a_at").text rescue ''
+        title.gsub!(/\.$/, '')
+
+        googleUrl      = paper.children[0].children[0].attribute('href').text rescue ''
+        authors        = paper.children[0].children[1].text.clean rescue ''
         authors.gsub!("...", "et al")
 
-        journal        = paperDetails[0].children[4].content rescue '' 
+        journal        = paper.children[0].children[2].text rescue '' 
         journalName    = journal.split(/,|\d/).first.clean   rescue ''
         journalDetails = journal.gsub(journalName, '').clean 
-
-        year           = paper.css("#col-year").text # is the last thing we get
+        year           = journalDetails.match(/, \d+$/)[0]
+        journalDetails = journalDetails.gsub(year, '').clean
+        year           = year.clean
 
         #citations
-        citeInfo      = paper.css(".cit-dark-link")
+        citeInfo      = paper.css('.gsc_a_ac')
         citationCount = citeInfo.text
         citationUrl   = citationCount.empty?  ? nil : citeInfo.attribute('href').to_s 
 
@@ -56,7 +61,7 @@ class RubyScholar
     # But if registered at crossref (its free), DOI can be retreived. 
     def getDoi(lastNameFirstAuthor, title, crossRefEmail)
       return '' if @crossRefEmail.nil?
-      sleep(rand(50..200)/100.0 ) # to reduce risk 
+      sleep(rand(50..200)/100.0 ) # to reduce risk of seeming like a computer
       STDERR << "Getting DOI for paper by #{lastNameFirstAuthor}: #{title}.\n"
       url = 'http://www.crossref.org/openurl?redirect=false' +  
         '&pid='    + crossRefEmail + 
