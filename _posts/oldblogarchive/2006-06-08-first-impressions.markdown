@@ -33,4 +33,4 @@ Premieres impressions?
 a suivre...
 
 
-![](http://yannick.poulet.org/wordpress/wp-content/uploads/2006/06/bulldog.jpg)
+![](/images/2006-06-08-first-impressions/bulldog.jpg)

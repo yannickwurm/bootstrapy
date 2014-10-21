@@ -16,6 +16,12 @@ theme1papers:
  - Feldmeyer2014.pdf
  - MolBiolEvol-2014-Hoffmann-2689-96.pdf
 
+genomedynamics:
+ - genomedynamics/kaessman2014ychromosome.pdf
+ - genomedynamics/bdelloid2013.pdf
+ - genomedynamics/WagnerBeesNatureGenetics2014.pdf
+ - genomedynamics/Poelstra2014Science.pdf
+ - genomedynamics/Soria-Carrasco2014Science.pdf
 ---
 
 <div class="row">
@@ -35,6 +41,15 @@ theme1papers:
       <li><a href="theme1/{{file}}">{{ file }}</a></li>
 	  {% endfor %}
 	</ul>
+
+	<h2>Theme 4: Genome dynamics & adaptation</h2>
+	<p>PDFs to papers we're studying:</p>
+	<ul>
+	  {% for file in page.genomedynamics %}
+      <li><a href="{{file}}">{{ file }}</a></li>
+	  {% endfor %}
+	</ul>
+
   </div>
 </div>
 
