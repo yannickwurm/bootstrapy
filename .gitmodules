@@ -1,3 +1,3 @@
 [submodule "rubyscholar"]
-	path = rubyscholarrepo
+	path = _rubyscholarrepo
 	url = https://github.com/yannickwurm/rubyscholar

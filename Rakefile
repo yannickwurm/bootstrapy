@@ -32,7 +32,7 @@ desc "Scrape Google Scholar"
 task :scrape do
   Rake::Task
     puts "## Scraping Google Scholar for publications"
-    system "ruby _rubyscholar/scrape.rb > _includes/publications.html"
+    system "ruby -I _rubyscholarrepo/lib/ ./_rubyscholarrepo/bin/rubyscholar --config _rubyscholarconfig.yaml --output _includes/publications.html"
     puts "##Scraping Done."
 end
 
